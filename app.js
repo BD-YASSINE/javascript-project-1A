@@ -1,6 +1,11 @@
 const express = require('express');
+const cors = require('cors')
+
 //crete express app
 const app = express();
+
+// allow cors
+app.use(cors())
 
 //add middleware
 app.use(express.json()); 
